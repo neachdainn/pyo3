@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1674761358288,
+  "lastUpdate": 1701380345213,
   "repoUrl": "https://github.com/neachdainn/pyo3",
   "entries": {
     "pyo3-bench": [
@@ -24983,6 +24983,414 @@ window.BENCHMARK_DATA = {
             "name": "tuple_get_item_unchecked",
             "value": 862933,
             "range": "± 5184",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "mail@davidhewitt.dev",
+            "name": "David Hewitt",
+            "username": "davidhewitt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "81ad2e8baba9e24c5f798ac1a3b016d297af8e5b",
+          "message": "Merge pull request #3598 from davidhewitt/clippy-beta\n\nci: run beta clippy as an allowed-to-fail job",
+          "timestamp": "2023-11-29T06:47:21Z",
+          "tree_id": "6330cf96a627cb9cb8da2b06d377f4f86392351b",
+          "url": "https://github.com/neachdainn/pyo3/commit/81ad2e8baba9e24c5f798ac1a3b016d297af8e5b"
+        },
+        "date": 1701380327894,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "identify_object_type",
+            "value": 452,
+            "range": "± 14",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "collect_generic_iterator",
+            "value": 11247829,
+            "range": "± 70699",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_bigint_extract_fail",
+            "value": 229,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_bigint_small",
+            "value": 51,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_bigint_big_negative",
+            "value": 166,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_bigint_big_positive",
+            "value": 135,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_bigint_huge_negative",
+            "value": 1281,
+            "range": "± 17",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_bigint_huge_positive",
+            "value": 1069,
+            "range": "± 52",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "call_0",
+            "value": 32945,
+            "range": "± 694",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "call_method_0",
+            "value": 100547,
+            "range": "± 3057",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ordered_dunder_methods",
+            "value": 44,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ordered_richcmp",
+            "value": 46,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "decimal_via_extract",
+            "value": 372,
+            "range": "± 8",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_dict",
+            "value": 1992966,
+            "range": "± 55576",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dict_new",
+            "value": 4050040,
+            "range": "± 250570",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dict_get_item",
+            "value": 2418903,
+            "range": "± 35496",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashmap",
+            "value": 6579655,
+            "range": "± 105312",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_btreemap",
+            "value": 9629889,
+            "range": "± 85372",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "mapping_from_dict",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "err_new_restore_and_fetch",
+            "value": 164,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "err_new_without_gil",
+            "value": 13,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_str_extract_success",
+            "value": 10,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_str_extract_fail",
+            "value": 33,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_str_downcast_success",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_str_downcast_fail",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_int_extract_success",
+            "value": 7,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_int_extract_fail",
+            "value": 232,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_int_downcast_success",
+            "value": 7,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_int_downcast_fail",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_float_extract_success",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_float_extract_fail",
+            "value": 225,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_float_downcast_success",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_float_downcast_fail",
+            "value": 3,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "enum_from_pyobject",
+            "value": 985,
+            "range": "± 29",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_via_downcast",
+            "value": 0,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_via_extract",
+            "value": 1,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "not_a_list_via_downcast",
+            "value": 0,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "not_a_list_via_extract",
+            "value": 30,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "not_a_list_via_extract_enum",
+            "value": 586,
+            "range": "± 92",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "f64_from_pyobject",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "clean_gilpool_new",
+            "value": 7,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "clean_acquire_gil",
+            "value": 63,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "dirty_acquire_gil",
+            "value": 64,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "getattr_direct",
+            "value": 107,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "getattr_intern",
+            "value": 29,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_list",
+            "value": 1789743,
+            "range": "± 42406",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_new",
+            "value": 1143432,
+            "range": "± 117246",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_get_item",
+            "value": 971929,
+            "range": "± 20577",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "list_get_item_unchecked",
+            "value": 866726,
+            "range": "± 20841",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "sequence_from_list",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "first_time_init",
+            "value": 3286,
+            "range": "± 360",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "drop_many_objects",
+            "value": 1859,
+            "range": "± 14",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "set_new",
+            "value": 1640611,
+            "range": "± 57867",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_set",
+            "value": 1963976,
+            "range": "± 18169",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_hashset",
+            "value": 7176728,
+            "range": "± 39292",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "extract_btreeset",
+            "value": 3294147,
+            "range": "± 11321",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "iter_tuple",
+            "value": 1308461,
+            "range": "± 7988",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_new",
+            "value": 1113399,
+            "range": "± 98896",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_get_item",
+            "value": 862881,
+            "range": "± 6036",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_get_item_unchecked",
+            "value": 781167,
+            "range": "± 4401",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "sequence_from_tuple",
+            "value": 2,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_new_list",
+            "value": 165119,
+            "range": "± 3846",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_to_list",
+            "value": 82101,
+            "range": "± 1361",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "tuple_into_py",
+            "value": 96,
+            "range": "± 0",
             "unit": "ns/iter"
           }
         ]
